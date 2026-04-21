@@ -1,13 +1,27 @@
 import pyautogui
 import time
+import os
+import sys
 import pyperclip
 import keyboard
 import math
-import somErro
+
+# --- BLOCO MÁGICO PARA CORRIGIR O CAMINHO ---
+# Pega o caminho da pasta 'services' e sobe um nível para a raiz do projeto
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if root_path not in sys.path:
+    sys.path.append(root_path)
+# --------------------------------------------
+
+from utils import somErro  # Agora o Python saberá onde procurar
+
 pyautogui.PAUSE = 0.5
+
+
 def duplicar(): 
+
     #Clica nas 3 bolinhas do 1º item
-    pyautogui.moveTo(1662, 554, duration=0.1)
+    pyautogui.moveTo(1659, 499, duration=0.1)
     pyautogui.click()
     for i in range(2):
         pyautogui.press('tab')
@@ -15,15 +29,16 @@ def duplicar():
     pyautogui.press('enter')
     time.sleep(4)
     # Confirma duplicação (Botão confirmar duplicação)
-    pyautogui.moveTo(1146, 643, duration=0.1)
+    pyautogui.moveTo(1094, 597, duration=0.1)
     pyautogui.click()
     time.sleep(7)
 
-def esperaCarregar(sucess=0, tentativas=5):
+def esperaCarregar(sucess=0, tentativas=5): 
+    print(sucess)
     pyautogui.press('home')
     pyperclip.copy('')
     # Clica no preço do 1º item
-    pyautogui.moveTo(1518, 528, duration=0.1)
+    pyautogui.moveTo(1504, 494, duration=0.1)
     pyautogui.doubleClick()
     print(pyautogui.position())  
     pyautogui.hotkey("ctrl", "c")
@@ -36,16 +51,16 @@ def esperaCarregar(sucess=0, tentativas=5):
         esperaCarregar(sucess)
 def esperaNome(tentativa = 0):
     # Clica no nome do 1º item
-    pyautogui.moveTo(652, 664, duration=0.1)
+    pyautogui.moveTo(1025, 625, duration=0.1)
     pyautogui.click()
     
     if tentativa > 3:
         #Clica em (Cadápio), no canto superior esquerdo
-        pyautogui.moveTo(515, 222, duration=0.1)
+        pyautogui.moveTo(501, 187, duration=0.1)
         pyautogui.click()
         time.sleep(2)
         #Confirmar que deseja sair da criação
-        pyautogui.moveTo(1099, 654, duration=0.1)
+        pyautogui.moveTo(1137, 569, duration=0.1)
         pyautogui.click()
         esperaCarregar()
         duplicar()
@@ -54,7 +69,7 @@ def esperaNome(tentativa = 0):
     pyautogui.hotkey("ctrl", "a")
     pyautogui.hotkey("ctrl", "c")
     descricao = pyperclip.paste()
-    if descricao != 'Para criar combo':
+    if descricao != 'Teste1':
         time.sleep(5)
         esperaNome(tentativa+1)
     
@@ -68,7 +83,7 @@ def adiciona_item(item, descricao, preco, desconto):
     esperaNome()
     pyperclip.copy(item)
     # Clica no nome do item
-    pyautogui.moveTo(603, 544, duration=0.1)
+    pyautogui.moveTo(613, 507, duration=0.1)
     pyautogui.click()
     pyautogui.hotkey("ctrl", "v")
     time.sleep(1)
@@ -81,51 +96,53 @@ def adiciona_item(item, descricao, preco, desconto):
     pyautogui.hotkey("ctrl", "v")
 
     # Clicar em "Prosseguir"
-    pyautogui.moveTo(1817, 979, duration=0.1)
+    pyautogui.moveTo(1802, 864, duration=0.1)
     pyautogui.click()
     pyautogui.click()
 
     # Abre preço
     time.sleep(2)
     #Clicar no Nome da categoria (Na linha do preço)
-    pyautogui.moveTo(628, 696, duration=0.1)
+    pyautogui.moveTo(591, 660, duration=0.1)
     pyautogui.click()
-    for _ in range(3):
+    for _ in range(2):
         pyautogui.press('tab')
-    pyautogui.press("enter")
+    pyautogui.typewrite(str(preco))
+
+    '''pyautogui.press("enter")
 
     # Clica no primeiro campo
     pyautogui.moveTo(1283, 414, duration=0.1)
     pyautogui.click()
-    pyautogui.typewrite(str(preco))
+    
     pyautogui.press('tab')
     pyautogui.typewrite(str(desconto))
     for i in range(2):
         pyautogui.press('tab')
-    pyautogui.press('enter')
+    pyautogui.press('enter')'''
 
     # Clica em Salvar
-    pyautogui.moveTo(1817, 994, duration=0.1)
+    pyautogui.moveTo(1797, 866, duration=0.1)
     pyautogui.click()
     time.sleep(15)
 
 def criaCardapio():
     try:
         pyautogui.hotkey("alt","tab")
-        with open('pizza.txt', 'r', encoding='utf-8') as arquivo:
+        with open('data/pizza.txt', 'r', encoding='utf-8') as arquivo:
             linhas = arquivo.readlines()
 
         print("Iniciando")
 
         for i, linha in enumerate(linhas, start=1):
             nome, descricao = linha.strip().split('|')
-            descricao = descricao.strip() +" Acompanha Guaraná Antarctica 2l. Foto Ilustrativa"
+            descricao = descricao.strip() +" Foto Ilustrativa."
             #desconto_valor = float(preco)
             #preco.replace(",",".").strip()
-            desconto_valor = math.floor((float(69.90)+15))+0.9 
+            desconto_valor = math.floor((float(79.90)+0))+0.9 
             preco_valor = math.floor(desconto_valor/0.5)+0.9
 
-            item = f"Pizza {nome.strip()} Gigante (8 Pedaços) + Guaraná Antarctica 2l"
+            item = f"Pizza {nome.strip()} - Grande (8 Pedaços) + Coca Cola 2l"
 
             adiciona_item(
                 item,
@@ -141,5 +158,5 @@ def criaCardapio():
         somErro.som_erro()
         pyautogui.alert(f"❌ ERRO:\n{str(e)}")
 
-criaCardapio()
-#
+if __name__ == "__main__":
+    criaCardapio()

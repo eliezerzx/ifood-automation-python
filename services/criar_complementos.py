@@ -2,7 +2,10 @@ import keyboard
 import pyautogui
 import pyperclip
 import time
+import os
+
 pyautogui.PAUSE=0.6
+
 def adiciona_complemento(item,preco):
     pyautogui.click(1270,432)
     time.sleep(3)
@@ -31,18 +34,22 @@ def adiciona_complemento(item,preco):
             pyautogui.press('tab')
         pyautogui.press('enter')
 
+diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+caminho_arquivo = os.path.join(diretorio_atual, '..', 'data', 'complemento.txt')
+def executar():
+    
+    with open(caminho_arquivo, 'r', encoding='utf-8') as arquivo:
+        linhas = arquivo.readlines()
 
-with open('complemento.txt', 'r', encoding='utf-8') as arquivo:
-    linhas = arquivo.readlines()
+    for i, linha in enumerate(linhas, start=1):
+        item = "Adicional "+linha.strip()
+        preco = '790'                        
+        #linha = linha.split('–')
+        #item  = "Borda "+linha[0].strip()
+        #preco = linha[1].strip()
+        adiciona_complemento(item, preco) 
 
-for i, linha in enumerate(linhas, start=1):
-    item = "Adicional "+linha.strip()
-    preco = '790'                        
-    #linha = linha.split('–')
-    #item  = "Borda "+linha[0].strip()
-    #preco = linha[1].strip()
-    adiciona_complemento(item, preco) 
+    pyautogui.alert("Pronto")
 
-pyautogui.alert("Pronto")
-
-keyboard.wait('q')
+if __name__ == "__main__":
+    executar()

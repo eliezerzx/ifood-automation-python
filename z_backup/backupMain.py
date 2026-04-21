@@ -1,6 +1,6 @@
-import funcionalidadeSecundaria
-import upsellDefinido
-import upsellIndefinido
+from z_outros import funcionalidadeSecundaria
+from z_outros import upsellDefinido
+from z_outros import upsellIndefinido
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import os
