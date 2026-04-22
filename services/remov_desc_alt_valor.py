@@ -97,12 +97,12 @@ def alterar_desconto():
             tentativas_vazias += 1
 
             if tentativas_vazias == 1:
-                print("⏬ Nenhuma tag encontrada. Rolando página...")
+                print("⏬ Nenhum ícone encontrado. Rolando página...")
                 pyautogui.scroll(-800)
                 time.sleep(2)
 
             else:
-                print("💤 Nenhuma tag pendente após scroll.")
+                print("💤 Nenhum ícone pendente após scroll.")
                 somErro.som_sucesso()
                 pyautogui.alert("✅ Descontos removidos com sucesso!")
                 break
