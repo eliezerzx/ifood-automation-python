@@ -9,7 +9,7 @@ pyautogui.FAILSAFE = True
 
 # Importação dos seus módulos (certifique-se que as pastas existem no diretório)
 try:
-    from services import criar_cardapio, criar_complementos, dois_sabores, aplicar_desconto
+    from services import criar_cardapio, criar_complementos, dois_sabores, aplicar_desconto, remover_desconto, remov_desc_alt_valor
     from utils import coordenada
 except ImportError as e:
     print(f"Aviso: Erro ao carregar módulos de serviço: {e}")
@@ -150,6 +150,8 @@ class AppAutomacao(ctk.CTk):
             ("2 - Criar Complementos", lambda: self.executar_delay(criar_complementos.executar, "Complementos")),
             ("3 - 2 Sabores", lambda: self.executar_delay(dois_sabores.executar, "2 Sabores")),
             ("4 - Aplicar Descontos", lambda: self.executar_delay(aplicar_desconto.apli_desconto, "Descontos")),
+            ("5 - Remover Descontos", lambda: self.executar_delay(remover_desconto.remover_desconto, "Descontos")),
+            ("6 - Remover Descontos & Alterar Valor", lambda: self.executar_delay(remov_desc_alt_valor.alterar_desconto, "Descontos")),
             ("9 - Pegar Coordenada", self.rodar_coordenada_log),
             ("0 - Voltar", self.renderizar_menu_principal)
         ]
