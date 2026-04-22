@@ -105,7 +105,7 @@ class AppAutomacao(ctk.CTk):
 
         ctk.CTkLabel(header, text=f"Editando: {tipo}.txt", font=("Segoe UI", 20, "bold"), text_color="white").pack(side="left", padx=20)
 
-        self.textbox = ctk.CTkTextbox(self.frame_editor, font=("Consolas", 16), fg_color="#2B2B2B", border_color=COR_AMARELO, border_width=1)
+        self.textbox = ctk.CTkTextbox(self.frame_editor, font=("Consolas", 16), fg_color="#FFFFFF", border_color=COR_AMARELO, border_width=1)
         self.textbox.pack(expand=True, fill="both", pady=10)
 
         if os.path.exists(self.caminho_dados[tipo]):
