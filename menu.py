@@ -2,6 +2,7 @@ from services import criar_cardapio
 from services import criar_complementos
 from services import dois_sabores
 from services import aplicar_desconto
+from services import remover_desconto
 from utils import coordenada
 from interfaces import interface
 import sys
@@ -57,14 +58,22 @@ while True:
         barra_carregamento()
         dois_sabores.executar()
 
+    # ---- Executa opção "4" para rodar aplicar_desconto.py
     elif opcao == "4":
         barra_carregamento()
         aplicar_desconto.apli_desconto()
+    
+    # ---- Executa opção "5" para rodar remover_desconto.py
+    elif opcao == "5":
+        barra_carregamento()
+        remover_desconto.remover_desconto()
 
+    # ---- Executa opção "9" para rodar coordenada.py
     elif opcao == "9":
         coordenada.coordenada()
         input("\nClique para Voltar...")
 
+    # ---- Executa opção "0" para sair do programa.py
     elif opcao == "0":
         barra_saindo()
         break
