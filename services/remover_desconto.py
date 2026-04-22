@@ -10,7 +10,6 @@ NOME_IMAGEM = os.path.join(BASE_DIR, "image", "botao_verde.png")
 def box_valido(box):
     """
     Valida se o tamanho encontrado é parecido com o ícone esperado.
-    Ajuste os limites se necessário.
     """
     return (
         10 <= box.width <= 40 and
@@ -22,11 +21,10 @@ def remover_desconto():
     print("--- INICIANDO AUTOMAÇÃO ---")
     time.sleep(3)
 
-    # Se souber a área onde os ícones aparecem, coloque aqui:
-    # region = (x, y, largura, altura)
-    # Exemplo:
-    # region = (1200, 200, 500, 800)
     region = None
+
+    # ✅ CORREÇÃO: inicializa variável antes do loop
+    tentativas_vazias = 0
 
     while True:
         print("\n🔍 Escaneando a tela em busca do ícone exato...")
@@ -35,7 +33,7 @@ def remover_desconto():
         try:
             tags = list(pyautogui.locateAllOnScreen(
                 NOME_IMAGEM,
-                confidence=0.90, # aumente se ainda houver falso positivo
+                confidence=0.90,
                 grayscale=False,
                 region=region
             ))
@@ -46,7 +44,7 @@ def remover_desconto():
         if tags:
             print(f"Foram encontrados {len(tags)} ícones.")
         else:
-            print("Nenhum ícones encontrado.")
+            print("Nenhum ícone encontrado.")
 
         for box in tags:
             if not box_valido(box):
@@ -56,30 +54,32 @@ def remover_desconto():
             x, y = pyautogui.center(box)
             print(f"✅ Ícone encontrado em ({x}, {y}) | tamanho: {box.width}x{box.height}")
 
-            # Clica no ícone exato
+            # Clica no ícone
             pyautogui.click(x, y)
             time.sleep(1)
 
             # Clica em remover
-            pyautogui.click(1763, 848)
+            pyautogui.click(1776, 985)
             time.sleep(0.5)
 
             encontrou_neste_ciclo = True
 
-            # após remover, reescaneia a tela
+            # ✅ Resetar tentativas vazias quando encontrar algo
+            tentativas_vazias = 0
+
             time.sleep(2)
             break
 
         if not encontrou_neste_ciclo:
             tentativas_vazias += 1
-            
+
             if tentativas_vazias == 1:
-                print("⏬ Nenhuma tag encontrada. Rolando a página para baixo...")
-                pyautogui.scroll(-800) 
+                print("⏬ Nenhuma ícone encontrada. Rolando página...")
+                pyautogui.scroll(-800)
                 time.sleep(2)
+
             else:
-                # Se for a segunda tentativa seguida sem achar nada, finaliza
-                print("💤 Nenhuma tag verde pendente após scroll.")
+                print("💤 Nenhuma tag pendente após scroll.")
                 somErro.som_sucesso()
                 pyautogui.alert("✅ Descontos removidos com sucesso!")
                 break
