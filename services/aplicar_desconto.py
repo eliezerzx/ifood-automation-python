@@ -10,6 +10,8 @@ def apli_desconto():
     print("--- INICIANDO AUTOMAÇÃO ---")
     time.sleep(3) # Tempo para mudar de janela
 
+    tentativas_vazias = 0  # Contador para controlar os scrolls e finalização
+
     while True:
         print("\n🔍 Escaneando a tela em busca de tags cinzas...")
         encontrou_neste_ciclo = False
@@ -35,7 +37,7 @@ def apli_desconto():
                 time.sleep(1)
 
                 # --- 2. Clica no campo de valor
-                pyautogui.click(1631, 376) 
+                pyautogui.click(1633, 351) 
                 time.sleep(0.5)
 
                 # --- 3. Cola o valor
@@ -43,10 +45,11 @@ def apli_desconto():
                 time.sleep(1)
 
                 # --- 4. Clica em aplicar
-                pyautogui.click(1865, 987)
+                pyautogui.click(1861, 859)
                 print("💰 Desconto aplicado!")
                 
                 encontrou_neste_ciclo = True
+                tentativas_vazias = 0 # Resetamos o contador pois algo foi processado
                 
                 # IMPORTANTE: Após aplicar um, a tela pode mudar. 
                 # Damos um break para re-escanear do topo.
@@ -54,15 +57,23 @@ def apli_desconto():
                 break 
         
         if not encontrou_neste_ciclo:
-            print("💤 Nenhuma tag cinza pendente.")
-            somErro.som_sucesso()
-            pyautogui.alert("✅ Descontos finalizado com sucesso!")
-            break
+            tentativas_vazias += 1
+            
+            if tentativas_vazias == 1:
+                print("⏬ Nenhuma tag encontrada. Rolando a página para baixo...")
+                pyautogui.scroll(-800) 
+                time.sleep(2) 
+            else:
+                # Se for a segunda tentativa seguida sem achar nada, finaliza
+                print("💤 Nenhuma tag cinza pendente após scroll.")
+                somErro.som_sucesso()
+                pyautogui.alert("✅ Descontos finalizado com sucesso!")
+                break
 
 if __name__ == "__main__":
     try:
         apli_desconto()
     except KeyboardInterrupt:
         print("\n🛑 Programa encerrado pelo usuário.")
-        somErro.som_erro()
+        somErro.som_error()
         pyautogui.alert(f"❌ Programa encerrado pelo usuário.")
