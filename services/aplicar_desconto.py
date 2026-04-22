@@ -1,7 +1,12 @@
 import pyautogui
 import time
 import os
+import pyperclip
 from utils import somErro
+
+#Defina o valor do desconto
+valor = "46,90"
+pyperclip.copy(valor)
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 NOME_IMAGEM = os.path.join(BASE_DIR, "image", "botao_tag.png")
