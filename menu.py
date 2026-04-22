@@ -3,6 +3,7 @@ from services import criar_complementos
 from services import dois_sabores
 from services import aplicar_desconto
 from services import remover_desconto
+from services import remov_desc_alt_valor
 from utils import coordenada
 from interfaces import interface
 import sys
@@ -67,6 +68,11 @@ while True:
     elif opcao == "5":
         barra_carregamento()
         remover_desconto.remover_desconto()
+
+    # ---- Executa opção "6" para rodar remover_desconto.py & alterar valor antigo
+    elif opcao == "6":
+        barra_carregamento()
+        remov_desc_alt_valor.alterar_desconto()
 
     # ---- Executa opção "9" para rodar coordenada.py
     elif opcao == "9":
