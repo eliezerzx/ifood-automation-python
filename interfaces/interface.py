@@ -1,21 +1,28 @@
+import os
+
+def limpar_tela():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def exibir_menu():
+    limpar_tela()
     print("""
-==================================================
-||                                              ||
-||                --- M E N U ---               ||
-||               A U T O M A Ç Ã O              ||
-||                  I F O O D                   ||
-||                                              ||
-==================================================
-||                                              ||
-||  [1] Criar Cardapio                          ||
-||  [2] Criar Complementos                      ||
-||  [3] 2 Sabores                               ||
-||  [4] Aplicar Descontos                       ||
-||  [5] Remover Descontos                       ||
-||  [6] Remover Descontos & Alterar Valor       ||                    
-||  [9] Pegar Coordenada                        ||
-||  [0] Sair do programa                        ||
-||                                              ||
-==================================================
-""")
+╔══════════════════════════════════════════════════════════════╗
+║             --- IFOOD AUTOMATION SYSTEM v2.0 ---             ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║   [ GESTÃO DE CARDÁPIO ]                                     ║
+║    [1] Criar Novo Cardápio                                   ║
+║    [2] Criar Complementos (Adicionais)                       ║
+║    [3] Configurar 2 Sabores                                  ║
+║                                                              ║
+║   [ FINANCEIRO / DESCONTOS ]                                 ║
+║    [4] Aplicar Descontos em Massa                            ║
+║    [5] Remover Descontos Ativos                              ║
+║    [6] Remover Descontos & Alterar Valor                     ║
+║                                                              ║
+║   [ CONFIGURAÇÕES TÉCNICAS ]                                 ║
+║    [9] Pegar Coordenada (Setup)                              ║
+║    [0] Sair do Programa                                      ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+    """)
