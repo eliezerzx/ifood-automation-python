@@ -23,7 +23,7 @@ def apli_desconto():
         
         # Fazemos uma captura de tela uma única vez por ciclo para ganhar velocidade
         try:
-            tags = list(pyautogui.locateAllOnScreen(NOME_IMAGEM, confidence=0.7))
+            tags = list(pyautogui.locateAllOnScreen(NOME_IMAGEM, confidence=0.7)) # Caso não funcione o ícone correto, aumente confidence para 0.8/0.9 ( para ser mais preciso )
         except Exception as e:
             print(f"Erro ao buscar imagem: {e}")
             tags = []
