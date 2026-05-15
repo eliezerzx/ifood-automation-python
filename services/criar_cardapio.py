@@ -139,7 +139,7 @@ def criaCardapio():
             descricao = descricao.strip() +" Foto Ilustrativa."
             #desconto_valor = float(preco)
             #preco.replace(",",".").strip()
-            desconto_valor = math.floor((float(79.90)+0))+0.9 
+            desconto_valor = math.floor((float(39.90)+0))+0.9 
             preco_valor = math.floor(desconto_valor/0.5)+0.9
 
             item = f"Pizza {nome.strip()} - Grande (8 Pedaços) + Coca Cola 2l"
