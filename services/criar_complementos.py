@@ -7,13 +7,18 @@ import os
 pyautogui.PAUSE=0.6
 
 def adiciona_complemento(item,preco):
+    # Vai para criar novo complemento
     pyautogui.click(1270,432)
     time.sleep(1)
+
+    # Seleciona o tipo do complemento
     pyautogui.click(1391,527)
     pyautogui.click(1284,437)
     time.sleep(0.3)
+
+    # Clica para adicionar o nome do complemento
     pyautogui.click(1384,621)
-    pyautogui.moveTo(1444, 650, duration=0.3)  # move lentamente
+    pyautogui.moveTo(1444, 650, duration=0.3)
     pyautogui.click()
     pyperclip.copy(item)
     time.sleep(0.3)
@@ -22,7 +27,7 @@ def adiciona_complemento(item,preco):
     pyautogui.hotkey("ctrl", "v")
     pyautogui.press('tab')
     if preco == '0':
-        for i in range(5):
+        for i in range(4):
             pyautogui.press('tab')
         pyautogui.press('enter')
     else:
@@ -42,8 +47,8 @@ def executar():
         linhas = arquivo.readlines()
 
     for i, linha in enumerate(linhas, start=1):
-        item = "Adicional "+linha.strip()
-        preco = '790'                        
+        item = ""+linha.strip()
+        preco = '0'                        
         #linha = linha.split('–')
         #item  = "Borda "+linha[0].strip()
         #preco = linha[1].strip()

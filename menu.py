@@ -4,6 +4,7 @@ from services import dois_sabores
 from services import aplicar_desconto
 from services import remover_desconto
 from services import remov_desc_alt_valor
+from services import alterar_nome_desc
 from utils import coordenada
 from interfaces import interface
 import sys
@@ -73,6 +74,10 @@ while True:
     elif opcao == "6":
         barra_carregamento()
         remov_desc_alt_valor.alterar_desconto()
+
+    elif opcao == "7":
+        barra_carregamento()
+        alterar_nome_desc.editar_produto()   
 
     # ---- Executa opção "9" para rodar coordenada.py
     elif opcao == "9":

@@ -1,68 +1,216 @@
-Pizza Broto Mussarela | Mussarela de primeira qualidade
-Pizza Broto Dois Queijos | Mussarela e catupiry
-Pizza Broto Três Queijos | Mussarela, catupiry e provolone
-Pizza Broto Quatro Queijos | Mussarela, catupiry, provolone e parmesão
-Pizza Broto Cinco Queijos | Mussarela, catupiry, provolone, parmesão e gorgonzola
-Pizza Broto Marguerita 1 | Mussarela, manjericão, tomate e parmesão
-Pizza Broto Marguerita com Pepperoni | Mussarela, manjericão, pepperoni, tomate e parmesão
-Pizza Broto Tomate Seco | Mussarela, alho poró, parmesão e tomate seco
-Pizza Broto Napolitana | Mussarela, tomate e parmesão
-Pizza Broto Alho | Mussarela, parmesão e alho frito
-Pizza Broto Frango com Cream Cheese | Frango, milho, cream cheese e bacon
-Pizza Broto Caipira | Frango, palmito e mussarela
-Pizza Broto Carijó | Frango, ervilha, milho e mussarela
-Pizza Broto Camburi | Frango, bacon, palmito e catupiry
-Pizza Broto Frango com Catupiry | Frango e catupiry
-Pizza Broto Frango com Brócolis | Frango, brócolis, bacon e mussarela
-Pizza Broto Frangolino | Frango, tomate, milho, creme de leite e catupiry
-Pizza Broto Mista | Presunto, frango, mussarela e calabresa
-Pizza Broto Calabresa com Cream Cheese | Calabresa, cebola e cream cheese
-Pizza Broto Clássica | Calabresa fatiada, cebola e mussarela
-Pizza Broto Baiacatu | Calabresa fatiada, cebola e catupiry
-Pizza Broto Baiana I | Calabresa moída, ovos, cebola e molho de pimenta
-Pizza Broto Baiana Especial I | Calabresa moída, ovos, cebola e mussarela
-Pizza Broto Calabresa | Calabresa fatiada e cebola
-Pizza Broto Do Pizzaiolo | Calabresa fatiada, milho, ervilha, ovos, cebola e mussarela
-Pizza Broto À Moda do Dom | Calabresa fatiada, palmito, bacon e mussarela
-Pizza Broto Monalisa | Calabresa moída, bacon, mussarela, fatias de tomate e alho
-Pizza Broto Toscana | Calabresa moída e mussarela
-Pizza Broto Lombo | Lombo, cebola e mussarela
-Pizza Broto Veneza | Lombo, champignon, catupiry e mussarela
-Pizza Broto À Moda do Chef | Presunto, lombo, bacon, mussarela e parmesão
-Pizza Broto Canadense | Lombo, bacon, catupiry e tomate
-Pizza Broto Atum 1 | Atum sólido e cebola
-Pizza Broto Atum com Mussarela | Atum sólido, cebola e mussarela
-Pizza Broto Felithe | Atum sólido, palmito, ovo, cebola e catupiry
-Pizza Broto Americana | Atum sólido, palmito, ovo, cebola e mussarela
-Pizza Broto Brigadeiro | Chocolate cremoso e granulado
-Pizza Broto Prestígio | Chocolate cremoso e coco ralado
-Pizza Broto Nutella | Nutella e morango
-Pizza Broto Nutella com Banana | Nutella e banana
-Pizza Broto Tentação | Banana e chocolate cremoso
-Pizza Broto Morango | Morango, chocolate, leite condensado e granulado
-Pizza Broto Nutella e Confete | Nutella e confete
-Pizza Broto Banana Show | Banana e chocolate branco
-Pizza Broto Banana Nevada | Banana e chocolate branco ao forno
-Pizza Broto Boa Idéia | Escolha 5 recheios (ingredientes)
-Pizza Broto Cicarelli | Carne seca, palmito, ovos, cebola e mussarela
-Pizza Broto Nordestina | Carne seca, calabresa moída, bacon, cebola e molho de pimenta
-Pizza Broto Pernambucana | Carne seca desfiada, cebola, tomate e catupiry
-Pizza Broto Verão | Carne seca, brócolis e mussarela
-Pizza Broto Francesa Especial | Peito de peru, palmito, ervilha, catupiry e tomate
-Pizza Broto Romana | Peito de peru, champignon, cebola e catupiry
-Pizza Broto Vienna | Peito de peru, bacon e mussarela
-Pizza Broto Nova Bacana | Peito de peru, brócolis, mussarela e alho frito
-Pizza Broto Baurú | Presunto, tomate e mussarela
-Pizza Broto Bacon | Mussarela, bacon, ovo e cebola
-Pizza Broto Portuguesa | Presunto, ovo, cebola, ervilha e mussarela
-Pizza Broto Pepperoni | Mussarela, pepperoni e parmesão
-Pizza Broto Vegetariana | Brócolis, ervilha, milho, palmito e mussarela
-Pizza Broto Larica | Presunto, palmito, bacon, mussarela e milho
-Pizza Broto Brócolis | Brócolis, palmito, bacon e mussarela
-Pizza Broto Brócolis Especial | Brócolis, cream cheese e bacon
-Pizza Broto Champignon | Champignon, presunto, cebola e mussarela
-Pizza Broto Champignon Especial | Champignon, palmito, mussarela e tomate seco
-Pizza Broto Palmito | Palmito e mussarela
-Pizza Broto Tuto Buono | Brócolis, bacon, catupiry e alho
-Pizza Broto Milho | Milho e catupiry
-Pizza Broto Philadelphia | Peito de peru, cream cheese, alho poró e parmesão
+## Pizzas Broto
+
+Pizza Broto Mussarela | Mussarela de primeira qualidade — R$ 39,90
+Pizza Broto Dois Queijos | Mussarela e catupiry — R$ 39,90
+Pizza Broto Três Queijos | Mussarela, catupiry e provolone — R$ 39,90
+Pizza Broto Quatro Queijos | Mussarela, catupiry, provolone e parmesão — R$ 39,90
+Pizza Broto Cinco Queijos | Mussarela, catupiry, provolone, parmesão e gorgonzola — R$ 39,90
+Pizza Broto Marguerita 1 | Mussarela, manjericão, tomate e parmesão — R$ 39,90
+Pizza Broto Marguerita com Pepperoni | Mussarela, manjericão, pepperoni, tomate e parmesão — R$ 39,90
+Pizza Broto Tomate Seco | Mussarela, alho poró, parmesão e tomate seco — R$ 39,90
+Pizza Broto Napolitana | Mussarela, tomate e parmesão — R$ 39,90
+Pizza Broto Alho | Mussarela, parmesão e alho frito — R$ 39,90
+Pizza Broto Frango com Cream Cheese | Frango, milho, cream cheese e bacon — R$ 39,90
+Pizza Broto Caipira | Frango, palmito e mussarela — R$ 39,90
+Pizza Broto Carijó | Frango, ervilha, milho e mussarela — R$ 39,90
+Pizza Broto Camburi | Frango, bacon, palmito e catupiry — R$ 39,90
+Pizza Broto Frango com Catupiry | Frango e catupiry — R$ 39,90
+Pizza Broto Frango com Brócolis | Frango, brócolis, bacon e mussarela — R$ 39,90
+Pizza Broto Frangolino | Frango, tomate, milho, creme de leite e catupiry — R$ 39,90
+Pizza Broto Mista | Presunto, frango, mussarela e calabresa — R$ 39,90
+Pizza Broto Calabresa com Cream Cheese | Calabresa, cebola e cream cheese — R$ 39,90
+Pizza Broto Clássica | Calabresa fatiada, cebola e mussarela — R$ 39,90
+Pizza Broto Baiacatu | Calabresa fatiada, cebola e catupiry — R$ 39,90
+Pizza Broto Baiana I | Calabresa moída, ovos, cebola e molho de pimenta — R$ 39,90
+Pizza Broto Baiana Especial I | Calabresa moída, ovos, cebola e mussarela — R$ 39,90
+Pizza Broto Calabresa | Calabresa fatiada e cebola — R$ 39,90
+Pizza Broto Do Pizzaiolo | Calabresa fatiada, milho, ervilha, ovos, cebola e mussarela — R$ 39,90
+Pizza Broto À Moda do Dom | Calabresa fatiada, palmito, bacon e mussarela — R$ 39,90
+Pizza Broto Monalisa | Calabresa moída, bacon, mussarela, fatias de tomate e alho — R$ 39,90
+Pizza Broto Toscana | Calabresa moída e mussarela — R$ 39,90
+Pizza Broto Lombo | Lombo, cebola e mussarela — R$ 39,90
+Pizza Broto Veneza | Lombo, champignon, catupiry e mussarela — R$ 39,90
+Pizza Broto À Moda do Chef | Presunto, lombo, bacon, mussarela e parmesão — R$ 39,90
+Pizza Broto Canadense | Lombo, bacon, catupiry e tomate — R$ 39,90
+Pizza Broto Atum 1 | Atum sólido e cebola — R$ 39,90
+Pizza Broto Atum com Mussarela | Atum sólido, cebola e mussarela — R$ 39,90
+Pizza Broto Felithe | Atum sólido, palmito, ovo, cebola e catupiry — R$ 39,90
+Pizza Broto Americana | Atum sólido, palmito, ovo, cebola e mussarela — R$ 39,90
+Pizza Broto Brigadeiro | Chocolate cremoso e granulado — R$ 39,90
+Pizza Broto Prestígio | Chocolate cremoso e coco ralado — R$ 39,90
+Pizza Broto Nutella | Nutella e morango — R$ 39,90
+Pizza Broto Nutella com Banana | Nutella e banana — R$ 39,90
+Pizza Broto Tentação | Banana e chocolate cremoso — R$ 39,90
+Pizza Broto Morango | Morango, chocolate, leite condensado e granulado — R$ 39,90
+Pizza Broto Nutella e Confete | Nutella e confete — R$ 39,90
+Pizza Broto Banana Show | Banana e chocolate branco — R$ 39,90
+Pizza Broto Banana Nevada | Banana e chocolate branco ao forno — R$ 39,90
+Pizza Broto Boa Idéia | Escolha 5 recheios (ingredientes) — R$ 39,90
+Pizza Broto Cicarelli | Carne seca, palmito, ovos, cebola e mussarela — R$ 39,90
+Pizza Broto Nordestina | Carne seca, calabresa moída, bacon, cebola e molho de pimenta — R$ 39,90
+Pizza Broto Pernambucana | Carne seca desfiada, cebola, tomate e catupiry — R$ 39,90
+Pizza Broto Verão | Carne seca, brócolis e mussarela — R$ 39,90
+Pizza Broto Francesa Especial | Peito de peru, palmito, ervilha, catupiry e tomate — R$ 39,90
+Pizza Broto Romana | Peito de peru, champignon, cebola e catupiry — R$ 39,90
+Pizza Broto Vienna | Peito de peru, bacon e mussarela — R$ 39,90
+Pizza Broto Nova Bacana | Peito de peru, brócolis, mussarela e alho frito — R$ 39,90
+Pizza Broto Baurú | Presunto, tomate e mussarela — R$ 39,90
+Pizza Broto Bacon | Mussarela, bacon, ovo e cebola — R$ 39,90
+Pizza Broto Portuguesa | Presunto, ovo, cebola, ervilha e mussarela — R$ 39,90
+Pizza Broto Pepperoni | Mussarela, pepperoni e parmesão — R$ 39,90
+Pizza Broto Vegetariana | Brócolis, ervilha, milho, palmito e mussarela — R$ 39,90
+Pizza Broto Larica | Presunto, palmito, bacon, mussarela e milho — R$ 39,90
+Pizza Broto Brócolis | Brócolis, palmito, bacon e mussarela — R$ 39,90
+Pizza Broto Brócolis Especial | Brócolis, cream cheese e bacon — R$ 39,90
+Pizza Broto Champignon | Champignon, presunto, cebola e mussarela — R$ 39,90
+Pizza Broto Champignon Especial | Champignon, palmito, mussarela e tomate seco — R$ 39,90
+Pizza Broto Palmito | Palmito e mussarela — R$ 39,90
+Pizza Broto Tuto Buono | Brócolis, bacon, catupiry e alho — R$ 39,90
+Pizza Broto Milho | Milho e catupiry — R$ 39,90
+Pizza Broto Philadelphia | Peito de peru, cream cheese, alho poró e parmesão — R$ 39,90
+
+---
+
+## Pizzas Média
+
+Pizza Média Mussarela | Mussarela de primeira qualidade — R$ 49,90
+Pizza Média Dois Queijos | Mussarela e catupiry — R$ 49,90
+Pizza Média Três Queijos | Mussarela, catupiry e provolone — R$ 49,90
+Pizza Média Quatro Queijos | Mussarela, catupiry, provolone e parmesão — R$ 49,90
+Pizza Média Cinco Queijos | Mussarela, catupiry, provolone, parmesão e gorgonzola — R$ 49,90
+Pizza Média Marguerita 1 | Mussarela, manjericão, tomate e parmesão — R$ 49,90
+Pizza Média Marguerita com Pepperoni | Mussarela, manjericão, pepperoni, tomate e parmesão — R$ 49,90
+Pizza Média Tomate Seco | Mussarela, alho poró, parmesão e tomate seco — R$ 49,90
+Pizza Média Napolitana | Mussarela, tomate e parmesão — R$ 49,90
+Pizza Média Alho | Mussarela, parmesão e alho frito — R$ 49,90
+Pizza Média Frango com Cream Cheese | Frango, milho, cream cheese e bacon — R$ 49,90
+Pizza Média Caipira | Frango, palmito e mussarela — R$ 49,90
+Pizza Média Carijó | Frango, ervilha, milho e mussarela — R$ 49,90
+Pizza Média Camburi | Frango, bacon, palmito e catupiry — R$ 49,90
+Pizza Média Frango com Catupiry | Frango e catupiry — R$ 49,90
+Pizza Média Frango com Brócolis | Frango, brócolis, bacon e mussarela — R$ 49,90
+Pizza Média Frangolino | Frango, tomate, milho, creme de leite e catupiry — R$ 49,90
+Pizza Média Mista | Presunto, frango, mussarela e calabresa — R$ 49,90
+Pizza Média Calabresa com Cream Cheese | Calabresa, cebola e cream cheese — R$ 49,90
+Pizza Média Clássica | Calabresa fatiada, cebola e mussarela — R$ 49,90
+Pizza Média Baiacatu | Calabresa fatiada, cebola e catupiry — R$ 49,90
+Pizza Média Baiana I | Calabresa moída, ovos, cebola e molho de pimenta — R$ 49,90
+Pizza Média Baiana Especial I | Calabresa moída, ovos, cebola e mussarela — R$ 49,90
+Pizza Média Calabresa | Calabresa fatiada e cebola — R$ 49,90
+Pizza Média Do Pizzaiolo | Calabresa fatiada, milho, ervilha, ovos, cebola e mussarela — R$ 49,90
+Pizza Média À Moda do Dom | Calabresa fatiada, palmito, bacon e mussarela — R$ 49,90
+Pizza Média Monalisa | Calabresa moída, bacon, mussarela, fatias de tomate e alho — R$ 49,90
+Pizza Média Toscana | Calabresa moída e mussarela — R$ 49,90
+Pizza Média Lombo | Lombo, cebola e mussarela — R$ 49,90
+Pizza Média Veneza | Lombo, champignon, catupiry e mussarela — R$ 49,90
+Pizza Média À Moda do Chef | Presunto, lombo, bacon, mussarela e parmesão — R$ 49,90
+Pizza Média Canadense | Lombo, bacon, catupiry e tomate — R$ 49,90
+Pizza Média Atum 1 | Atum sólido e cebola — R$ 49,90
+Pizza Média Atum com Mussarela | Atum sólido, cebola e mussarela — R$ 49,90
+Pizza Média Felithe | Atum sólido, palmito, ovo, cebola e catupiry — R$ 49,90
+Pizza Média Americana | Atum sólido, palmito, ovo, cebola e mussarela — R$ 49,90
+Pizza Média Brigadeiro | Chocolate cremoso e granulado — R$ 49,90
+Pizza Média Prestígio | Chocolate cremoso e coco ralado — R$ 49,90
+Pizza Média Nutella | Nutella e morango — R$ 49,90
+Pizza Média Nutella com Banana | Nutella e banana — R$ 49,90
+Pizza Média Tentação | Banana e chocolate cremoso — R$ 49,90
+Pizza Média Morango | Morango, chocolate, leite condensado e granulado — R$ 49,90
+Pizza Média Nutella e Confete | Nutella e confete — R$ 49,90
+Pizza Média Banana Show | Banana e chocolate branco — R$ 49,90
+Pizza Média Banana Nevada | Banana e chocolate branco ao forno — R$ 49,90
+Pizza Média Boa Idéia | Escolha 5 recheios (ingredientes) — R$ 49,90
+Pizza Média Cicarelli | Carne seca, palmito, ovos, cebola e mussarela — R$ 49,90
+Pizza Média Nordestina | Carne seca, calabresa moída, bacon, cebola e molho de pimenta — R$ 49,90
+Pizza Média Pernambucana | Carne seca desfiada, cebola, tomate e catupiry — R$ 49,90
+Pizza Média Verão | Carne seca, brócolis e mussarela — R$ 49,90
+Pizza Média Francesa Especial | Peito de peru, palmito, ervilha, catupiry e tomate — R$ 49,90
+Pizza Média Romana | Peito de peru, champignon, cebola e catupiry — R$ 49,90
+Pizza Média Vienna | Peito de peru, bacon e mussarela — R$ 49,90
+Pizza Média Nova Bacana | Peito de peru, brócolis, mussarela e alho frito — R$ 49,90
+Pizza Média Baurú | Presunto, tomate e mussarela — R$ 49,90
+Pizza Média Bacon | Mussarela, bacon, ovo e cebola — R$ 49,90
+Pizza Média Portuguesa | Presunto, ovo, cebola, ervilha e mussarela — R$ 49,90
+Pizza Média Pepperoni | Mussarela, pepperoni e parmesão — R$ 49,90
+Pizza Média Vegetariana | Brócolis, ervilha, milho, palmito e mussarela — R$ 49,90
+Pizza Média Larica | Presunto, palmito, bacon, mussarela e milho — R$ 49,90
+Pizza Média Brócolis | Brócolis, palmito, bacon e mussarela — R$ 49,90
+Pizza Média Brócolis Especial | Brócolis, cream cheese e bacon — R$ 49,90
+Pizza Média Champignon | Champignon, presunto, cebola e mussarela — R$ 49,90
+Pizza Média Champignon Especial | Champignon, palmito, mussarela e tomate seco — R$ 49,90
+Pizza Média Palmito | Palmito e mussarela — R$ 49,90
+Pizza Média Tuto Buono | Brócolis, bacon, catupiry e alho — R$ 49,90
+Pizza Média Milho | Milho e catupiry — R$ 49,90
+Pizza Média Philadelphia | Peito de peru, cream cheese, alho poró e parmesão — R$ 49,90
+
+---
+
+## Pizzas Grande
+
+Pizza Grande Mussarela | Mussarela de primeira qualidade — R$ 59,90
+Pizza Grande Dois Queijos | Mussarela e catupiry — R$ 59,90
+Pizza Grande Três Queijos | Mussarela, catupiry e provolone — R$ 59,90
+Pizza Grande Quatro Queijos | Mussarela, catupiry, provolone e parmesão — R$ 59,90
+Pizza Grande Cinco Queijos | Mussarela, catupiry, provolone, parmesão e gorgonzola — R$ 59,90
+Pizza Grande Marguerita 1 | Mussarela, manjericão, tomate e parmesão — R$ 59,90
+Pizza Grande Marguerita com Pepperoni | Mussarela, manjericão, pepperoni, tomate e parmesão — R$ 59,90
+Pizza Grande Tomate Seco | Mussarela, alho poró, parmesão e tomate seco — R$ 59,90
+Pizza Grande Napolitana | Mussarela, tomate e parmesão — R$ 59,90
+Pizza Grande Alho | Mussarela, parmesão e alho frito — R$ 59,90
+Pizza Grande Frango com Cream Cheese | Frango, milho, cream cheese e bacon — R$ 59,90
+Pizza Grande Caipira | Frango, palmito e mussarela — R$ 59,90
+Pizza Grande Carijó | Frango, ervilha, milho e mussarela — R$ 59,90
+Pizza Grande Camburi | Frango, bacon, palmito e catupiry — R$ 59,90
+Pizza Grande Frango com Catupiry | Frango e catupiry — R$ 59,90
+Pizza Grande Frango com Brócolis | Frango, brócolis, bacon e mussarela — R$ 59,90
+Pizza Grande Frangolino | Frango, tomate, milho, creme de leite e catupiry — R$ 59,90
+Pizza Grande Mista | Presunto, frango, mussarela e calabresa — R$ 59,90
+Pizza Grande Calabresa com Cream Cheese | Calabresa, cebola e cream cheese — R$ 59,90
+Pizza Grande Clássica | Calabresa fatiada, cebola e mussarela — R$ 59,90
+Pizza Grande Baiacatu | Calabresa fatiada, cebola e catupiry — R$ 59,90
+Pizza Grande Baiana I | Calabresa moída, ovos, cebola e molho de pimenta — R$ 59,90
+Pizza Grande Baiana Especial I | Calabresa moída, ovos, cebola e mussarela — R$ 59,90
+Pizza Grande Calabresa | Calabresa fatiada e cebola — R$ 59,90
+Pizza Grande Do Pizzaiolo | Calabresa fatiada, milho, ervilha, ovos, cebola e mussarela — R$ 59,90
+Pizza Grande À Moda do Dom | Calabresa fatiada, palmito, bacon e mussarela — R$ 59,90
+Pizza Grande Monalisa | Calabresa moída, bacon, mussarela, fatias de tomate e alho — R$ 59,90
+Pizza Grande Toscana | Calabresa moída e mussarela — R$ 59,90
+Pizza Grande Lombo | Lombo, cebola e mussarela — R$ 59,90
+Pizza Grande Veneza | Lombo, champignon, catupiry e mussarela — R$ 59,90
+Pizza Grande À Moda do Chef | Presunto, lombo, bacon, mussarela e parmesão — R$ 59,90
+Pizza Grande Canadense | Lombo, bacon, catupiry e tomate — R$ 59,90
+Pizza Grande Atum 1 | Atum sólido e cebola — R$ 59,90
+Pizza Grande Atum com Mussarela | Atum sólido, cebola e mussarela — R$ 59,90
+Pizza Grande Felithe | Atum sólido, palmito, ovo, cebola e catupiry — R$ 59,90
+Pizza Grande Americana | Atum sólido, palmito, ovo, cebola e mussarela — R$ 59,90
+Pizza Grande Brigadeiro | Chocolate cremoso e granulado — R$ 59,90
+Pizza Grande Prestígio | Chocolate cremoso e coco ralado — R$ 59,90
+Pizza Grande Nutella | Nutella e morango — R$ 59,90
+Pizza Grande Nutella com Banana | Nutella e banana — R$ 59,90
+Pizza Grande Tentação | Banana e chocolate cremoso — R$ 59,90
+Pizza Grande Morango | Morango, chocolate, leite condensado e granulado — R$ 59,90
+Pizza Grande Nutella e Confete | Nutella e confete — R$ 59,90
+Pizza Grande Banana Show | Banana e chocolate branco — R$ 59,90
+Pizza Grande Banana Nevada | Banana e chocolate branco ao forno — R$ 59,90
+Pizza Grande Boa Idéia | Escolha 5 recheios (ingredientes) — R$ 59,90
+Pizza Grande Cicarelli | Carne seca, palmito, ovos, cebola e mussarela — R$ 59,90
+Pizza Grande Nordestina | Carne seca, calabresa moída, bacon, cebola e molho de pimenta — R$ 59,90
+Pizza Grande Pernambucana | Carne seca desfiada, cebola, tomate e catupiry — R$ 59,90
+Pizza Grande Verão | Carne seca, brócolis e mussarela — R$ 59,90
+Pizza Grande Francesa Especial | Peito de peru, palmito, ervilha, catupiry e tomate — R$ 59,90
+Pizza Grande Romana | Peito de peru, champignon, cebola e catupiry — R$ 59,90
+Pizza Grande Vienna | Peito de peru, bacon e mussarela — R$ 59,90
+Pizza Grande Nova Bacana | Peito de peru, brócolis, mussarela e alho frito — R$ 59,90
+Pizza Grande Baurú | Presunto, tomate e mussarela — R$ 59,90
+Pizza Grande Bacon | Mussarela, bacon, ovo e cebola — R$ 59,90
+Pizza Grande Portuguesa | Presunto, ovo, cebola, ervilha e mussarela — R$ 59,90
+Pizza Grande Pepperoni | Mussarela, pepperoni e parmesão — R$ 59,90
+Pizza Grande Vegetariana | Brócolis, ervilha, milho, palmito e mussarela — R$ 59,90
+Pizza Grande Larica | Presunto, palmito, bacon, mussarela e milho — R$ 59,90
+Pizza Grande Brócolis | Brócolis, palmito, bacon e mussarela — R$ 59,90
+Pizza Grande Brócolis Especial | Brócolis, cream cheese e bacon — R$ 59,90
+Pizza Grande Champignon | Champignon, presunto, cebola e mussarela — R$ 59,90
+Pizza Grande Champignon Especial | Champignon, palmito, mussarela e tomate seco — R$ 59,90
+Pizza Grande Palmito | Palmito e mussarela — R$ 59,90
+Pizza Grande Tuto Buono | Brócolis, bacon, catupiry e alho — R$ 59,90
+Pizza Grande Milho | Milho e catupiry — R$ 59,90
+Pizza Grande Philadelphia | Peito de peru, cream cheese, alho poró e parmesão — R$ 59,90

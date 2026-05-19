@@ -5,7 +5,7 @@ import pyperclip
 from utils import somErro
 
 #Defina o valor do desconto
-valor = "46,90"
+valor = "59,90"
 pyperclip.copy(valor)
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -39,18 +39,18 @@ def apli_desconto():
                 
                 # --- 1. Clica na tag cinza
                 pyautogui.click(x, y)
-                time.sleep(1)
+                time.sleep(0.5)
 
                 # --- 2. Clica no campo de valor
                 pyautogui.click(1633, 351) 
-                time.sleep(0.5)
+                time.sleep(0.1)
 
                 # --- 3. Cola o valor
                 pyautogui.hotkey("ctrl", "v")
-                time.sleep(1)
+                time.sleep(0.3)
 
                 # --- 4. Clica em aplicar
-                pyautogui.click(1861, 859)
+                pyautogui.click(1846, 984)
                 print("💰 Desconto aplicado!")
                 
                 encontrou_neste_ciclo = True

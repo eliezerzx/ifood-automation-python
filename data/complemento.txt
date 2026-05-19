@@ -1,10 +1,68 @@
-cream cheese
-calabresa
-calabresa moída
-cebola
-ovo
-molho de pimenta
-lombo
-presunto
-peito de peru
-brócolis
+1/2 Pizza Mussarela
+1/2 Pizza Dois Queijos
+1/2 Pizza Três Queijos
+1/2 Pizza Quatro Queijos
+1/2 Pizza Cinco Queijos
+1/2 Pizza Marguerita 1
+1/2 Pizza Marguerita com Pepperoni
+1/2 Pizza Tomate Seco
+1/2 Pizza Napolitana
+1/2 Pizza Alho
+1/2 Pizza Frango com Cream Cheese
+1/2 Pizza Caipira
+1/2 Pizza Carijó
+1/2 Pizza Camburi
+1/2 Pizza Frango com Catupiry
+1/2 Pizza Frango com Brócolis
+1/2 Pizza Frangolino
+1/2 Pizza Mista
+1/2 Pizza Calabresa com Cream Cheese
+1/2 Pizza Clássica
+1/2 Pizza Baiacatu
+1/2 Pizza Baiana I
+1/2 Pizza Baiana Especial I
+1/2 Pizza Calabresa
+1/2 Pizza Do 1/2 Pizzaiolo
+1/2 Pizza À Moda do Dom
+1/2 Pizza Monalisa
+1/2 Pizza Toscana
+1/2 Pizza Lombo
+1/2 Pizza Veneza
+1/2 Pizza À Moda do Chef
+1/2 Pizza Canadense
+1/2 Pizza Atum 1
+1/2 Pizza Atum com Mussarela
+1/2 Pizza Felithe
+1/2 Pizza Americana
+1/2 Pizza Brigadeiro
+1/2 Pizza Prestígio
+1/2 Pizza Nutella
+1/2 Pizza Nutella com Banana
+1/2 Pizza Tentação
+1/2 Pizza Morango
+1/2 Pizza Nutella e Confete
+1/2 Pizza Banana Show
+1/2 Pizza Banana Nevada
+1/2 Pizza Boa Idéia
+1/2 Pizza Cicarelli
+1/2 Pizza Nordestina
+1/2 Pizza Pernambucana
+1/2 Pizza Verão
+1/2 Pizza Francesa Especial
+1/2 Pizza Romana
+1/2 Pizza Vienna
+1/2 Pizza Nova Bacana
+1/2 Pizza Baurú
+1/2 Pizza Bacon
+1/2 Pizza Portuguesa
+1/2 Pizza Pepperoni
+1/2 Pizza Vegetariana
+1/2 Pizza Larica
+1/2 Pizza Brócolis
+1/2 Pizza Brócolis Especial
+1/2 Pizza Champignon
+1/2 Pizza Champignon Especial
+1/2 Pizza Palmito
+1/2 Pizza Tuto Buono
+1/2 Pizza Milho
+1/2 Pizza Philadelphia

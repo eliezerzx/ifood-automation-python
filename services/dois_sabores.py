@@ -21,18 +21,18 @@ pyautogui.PAUSE=0.6
 
 def adiciona_complemento(item, descricao,preco='0'):
     #Clica em "Criar Novo Complemento"
-    pyautogui.click(1356,416)
+    pyautogui.click(1341,445)
     time.sleep(3)
     #Clica Em "Selecione o Tipo"
-    pyautogui.moveTo(1284,471,duration=0.2)
+    pyautogui.moveTo(1285,518,duration=0.2)
     pyautogui.click()
     time.sleep(0.4)
     #Clica em "Preparado"
-    pyautogui.moveTo(1251,375,duration=0.3)
+    pyautogui.moveTo(1249,427,duration=0.2)
     pyautogui.click()
     time.sleep(1)
     #Clica no Campo de Nome do Produto
-    pyautogui.moveTo(1263, 564, duration=0.4)  # move lentamente
+    pyautogui.moveTo(1259, 617, duration=0.2)  
     pyautogui.click()
     pyperclip.copy(item)
     time.sleep(1)
