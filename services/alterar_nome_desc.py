@@ -9,7 +9,6 @@ from utils import somErro
 pyautogui.FAILSAFE = True
 
 def editar_produto():
-    # 1. Dá um tempo para você clicar na tela do navegador antes de começar
     print("A automação começará em 5 segundos. Clique na página do primeiro produto!")
     time.sleep(5)
 
@@ -22,14 +21,10 @@ def editar_produto():
         # ----------------------------------------------------
         # PASSO 1: EDITAR O NOME DO PRODUTO
         # ----------------------------------------------------
-        # Vamos clicar no campo "Nome". Como a posição pode variar, o ideal é você deixar o mouse
-        # posicionado em cima do campo "Nome do Produto" no primeiro produto, ou mapear a coordenada.
-        # Para fins práticos, o script assume que você já clicou ou que vai usar o Tab.
+
+        pyautogui.click(x=571, y=483) # clique no campo Nome
         
-        # Simulando um clique no início para focar na página (ajuste as coordenadas se necessário)
-        pyautogui.click(x=571, y=483) # Exemplo de clique no campo Nome
-        
-        # Truque: Vamos selecionar tudo no campo Nome, copiar, e reescrever adicionando o sufixo.
+        # selecionar tudo no campo Nome, copiar, e reescrever adicionando o sufixo.
         pyautogui.hotkey('ctrl', 'a')
         time.sleep(0.3)
         pyautogui.hotkey('ctrl', 'c')
@@ -73,25 +68,15 @@ def editar_produto():
         # ----------------------------------------------------
         # PASSO 3: SALVAR AS ALTERAÇÕES
         # ----------------------------------------------------
-        # Geralmente o botão de salvar fica fixo embaixo ou você pode usar o TAB até chegar nele.
-        # Se o botão "Salvar" aceitar o atalho Ctrl + S na plataforma do iFood, use a linha abaixo:
-        # pyautogui.hotkey('ctrl', 's')
-        
-        # CASO NÃO ACEITE ATALHO: Você precisará mapear onde fica o botão "Salvar" na sua tela.
-        # Exemplo (substitua X e Y pelas coordenadas reais do seu botão Salvar):
         pyautogui.click(x=1772, y=982) 
         print("Aguardando salvar...")
-        time.sleep(1) # Tempo para a plataforma processar o salvamento
+        time.sleep(1)
 
         # ----------------------------------------------------
         # PASSO 4: IR PARA A PRÓXIMA ABA/PÁGINA DO NAVEGADOR
         # ----------------------------------------------------
-        # Se você abriu vários produtos em abas diferentes no Chrome/Edge:
         pyautogui.hotkey('ctrl', 'pgdn') # Ctrl + Page Down muda para a próxima aba
-        time.sleep(1) # Aguarda a nova aba carregar
-
-        # Opcional: Se precisar clicar novamente no campo Nome da nova aba para reiniciar o ciclo:
-        # pyautogui.click(x=500, y=470)
+        time.sleep(1)
         
     somErro.som_sucesso()
     pyautogui.alert("✅ Cardápio finalizado com sucesso!")
