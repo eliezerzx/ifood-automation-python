@@ -21,7 +21,7 @@ def box_valido(box):
 
 def alterar_desconto():
     print("--- INICIANDO AUTOMAÇÃO ---")
-    time.sleep(3)
+    time.sleep(2)
 
     region = None
     tentativas_vazias = 0
@@ -33,7 +33,7 @@ def alterar_desconto():
         try:
             tags = list(pyautogui.locateAllOnScreen(
                 NOME_IMAGEM,
-                confidence=0.90,
+                confidence=0.99,
                 grayscale=False,
                 region=region
             ))
@@ -60,14 +60,14 @@ def alterar_desconto():
 
             # Clica em remover
             pyautogui.click(1776, 985)
-            time.sleep(1)
+            time.sleep(5)
 
             # Altera o valor antigo
             try:
                 print("\n🔍 Procurando campo valor_antigo.png...")
                 campo = pyautogui.locateCenterOnScreen(
                     IMG_VALOR,
-                    confidence=0.85
+                    confidence=0.99
                 )
 
                 if campo:
@@ -76,10 +76,10 @@ def alterar_desconto():
                     time.sleep(0.5)
 
                     pyautogui.hotkey("ctrl", "a")
-                    time.sleep(0.2)
+                    time.sleep(0.5)
 
                     # Altera para valor novo
-                    pyautogui.write("89,90", interval=0.05)
+                    pyautogui.write("149,90", interval=0.05)
                     print("💰 Valor alterado")
                 else:
                     print("❌ Campo valor não encontrado.")
@@ -90,7 +90,7 @@ def alterar_desconto():
             encontrou_neste_ciclo = True
             tentativas_vazias = 0
 
-            time.sleep(2)
+            time.sleep(1)
             break
 
         if not encontrou_neste_ciclo:
@@ -99,7 +99,7 @@ def alterar_desconto():
             if tentativas_vazias == 1:
                 print("⏬ Nenhum ícone encontrado. Rolando página...")
                 pyautogui.scroll(-800)
-                time.sleep(2)
+                time.sleep(1)
 
             else:
                 print("💤 Nenhum ícone pendente após scroll.")

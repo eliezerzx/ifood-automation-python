@@ -9,21 +9,21 @@ pyautogui.PAUSE=0.6
 def adiciona_complemento(item,preco):
     # Vai para criar novo complemento
     pyautogui.click(1270,432)
-    time.sleep(1)
+    time.sleep(0.5)
 
     # Seleciona o tipo do complemento
     pyautogui.click(1391,527)
     pyautogui.click(1284,437)
-    time.sleep(0.3)
+    time.sleep(0.2)
 
     # Clica para adicionar o nome do complemento
     pyautogui.click(1384,621)
     pyautogui.moveTo(1444, 650, duration=0.3)
     pyautogui.click()
     pyperclip.copy(item)
-    time.sleep(0.3)
+    time.sleep(0.2)
     print(pyperclip.paste())
-    time.sleep(0.3)
+    time.sleep(0.2)
     pyautogui.hotkey("ctrl", "v")
     pyautogui.press('tab')
     if preco == '0':

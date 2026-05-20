@@ -5,8 +5,13 @@ from services import aplicar_desconto
 from services import remover_desconto
 from services import remov_desc_alt_valor
 from services import alterar_nome_desc
+from services import remov_grp_complementos
 from utils import coordenada
 from interfaces import interface
+import teste
+
+import pytesseract
+from PIL import Image
 import sys
 import time
 
@@ -77,7 +82,11 @@ while True:
 
     elif opcao == "7":
         barra_carregamento()
-        alterar_nome_desc.editar_produto()   
+        alterar_nome_desc.editar_produto()
+
+    elif opcao == "8":
+        barra_carregamento()
+        remov_grp_complementos.remov_complementos()
 
     # ---- Executa opção "9" para rodar coordenada.py
     elif opcao == "9":
